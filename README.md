@@ -70,8 +70,15 @@ root@abhi:/etc/nginx# netstat -tnlp | grep 80
 5.   
     All logs present at :/var/log/nginx$ vi access.log
 (venv2)$ 
-(venv2)$ 
-(venv2)$ 
+
+10-05-2019
+(venv2) abhilash@abhi:~/Documents/mobi'bBackend/a/MobiCore$
+(venv2)$ tar unzip --> tar -xvzf something.tar.tgz
+
+Mysql dumping
+$ mysql -u root -p coreA < core.sql
+
+dumps core.sql to coreA database (its like taking taking backup of core.sql ddb to a coreA db)
 (venv2)$ 
 (venv2)$ 
 (venv2)$ 
