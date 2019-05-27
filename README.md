@@ -85,7 +85,11 @@ dumps core.sql to coreA database (its like taking taking backup of core.sql ddb 
 (venv2)$ 
 
 
-
+27-05-2019: Gir stash
+git stash list, to list the stashes
+git stash  --> to stash the current stats,
+git statsh apply stash@{0} --> to apply a particular statsh
+git stash apply --index --> to get the staged cmmits
 
 '''
 ,
