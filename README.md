@@ -54,11 +54,11 @@ Check what database is connected to ur django project,
 
 4. Nginx and Gunicorn
 Nginx
-    Setup/change nginx default file
-    abhilash@abhi:/etc/nginx/sites-enabled$ sudo vi defaul with our modifications and save
-    START --> cd $: sudo service nginx start --> to start nginx.
-    CHECK --> /etc/nginx$: sudo service nginx status --> to check the status of nginx
-    RELOAD--> /etc/nginx$: sudo nginx -s reload
+    #Setup/change nginx default file
+    #abhilash@abhi:/etc/nginx/sites-enabled$ sudo vi defaul with our modifications and save
+    #START --> cd $: sudo service nginx start --> to start nginx.
+    #CHECK --> /etc/nginx$: sudo service nginx status --> to check the status of nginx
+    #RELOAD--> /etc/nginx$: sudo nginx -s reload
 Gunicorn
 START --> (venv2)$ gunicorn -D -c gunicorn_config.py ACT.wsgi #START gunicorn 
 CHECK --> (venv2)$ ps aux | grep gunicorn     #check whether gunicorn is working or not
@@ -93,3 +93,10 @@ git stash apply --index --> to get the staged cmmits
 
 '''
 ,
+
+
+To fix ACT.log show issue
+In ACT/settings.py change in logging ={}.
+logging[handlers][level] = 'DEBUG'
+logging[loggers][django][level] = 'DEBUG'
+logging[loggers][act][level] = 'DEBUG'
