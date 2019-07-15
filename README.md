@@ -93,3 +93,10 @@ git stash apply --index --> to get the staged cmmits
 
 '''
 ,
+
+
+To fix ACT.log show issue
+In ACT/settings.py change in logging ={}.
+logging[handlers][level] = 'DEBUG'
+logging[loggers][django][level] = 'DEBUG'
+logging[loggers][act][level] = 'DEBUG'
